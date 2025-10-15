@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testClasses.VerifyProductListPage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="veriryFilter"/>
+          <include name="verifyProductImages"/>
+          <include name="verifyProductTitleChangeColour"/>
+          <include name="verifyCountOfProducts"/>
+          <include name="verifyComparePopup"/>
+          <include name="verifyRelevanceSortByOptionSelected"/>
+          <include name="verifySerchedTextInProductListPage"/>
+          <include name="afterMethod"/>
+          <include name="verifyPresenceOfSortBy"/>
+          <include name="verifyCompareTooltipRemoveAllButton"/>
+          <include name="verifyProductPrice"/>
+          <include name="verifyProductTitle"/>
+          <include name="verifyProductAddToCompare"/>
+          <include name="verifyAddToCompareMaximumProducts"/>
+          <include name="veriryFilterSection"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="verifyNavigateToProductListPage"/>
+          <include name="verifyTooltipOfComapareProducts"/>
+        </methods>
+      </class> <!-- testClasses.VerifyProductListPage -->
+      <class name="testClasses.TopMenubarFunctionality">
+        <methods>
+          <include name="verifySearchHistoryTextAppeared"/>
+          <include name="afterClass"/>
+          <include name="VerifyPresenceOfSearchField"/>
+          <include name="verifyPresenceOfFlipkartImage"/>
+          <include name="verifyTheCartItemCount"/>
+          <include name="afterMethod"/>
+          <include name="verifyAppearanceOfCartOption"/>
+          <include name="verifySearchIconClickable"/>
+          <include name="verifyUserProfileOptionListAppeared"/>
+          <include name="beforeClass"/>
+          <include name="verifyPageReloadAndNavigateToHomePage"/>
+          <include name="verifyTrendingProductListAppeared"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testClasses.TopMenubarFunctionality -->
+      <class name="testClasses.FooterFunctionality">
+        <methods>
+          <include name="verifyNavigateToFacebookPage"/>
+          <include name="afterMethod"/>
+          <include name="verifyNavigateToPaymentsPage"/>
+          <include name="verifyNavigateToAdvertisePage"/>
+          <include name="verifyNavigateToCancellationAndReturnsPage"/>
+          <include name="verifyPresenceOfGroupComponentsSectionOptions"/>
+          <include name="verifyNavigateToContactPage"/>
+          <include name="verifyPresenceOfHelpSectionOptions"/>
+          <include name="verifyPresenceOfFooterBottomBarOptions"/>
+          <include name="verifyPresenceOfAboutSectionOptions"/>
+          <include name="verifyPresenceOfConsumerPolicySectionOptions"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="verifyNavigateToMyntraPage"/>
+        </methods>
+      </class> <!-- testClasses.FooterFunctionality -->
+      <class name="testClasses.LoginFunctionality">
+        <methods>
+          <include name="verifyEnterOTPField"/>
+          <include name="VerifyEnteredMobileNumber"/>
+          <include name="verifyToastMassage"/>
+          <include name="verifyHomeScreen"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="verifyErrorMassage"/>
+        </methods>
+      </class> <!-- testClasses.LoginFunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

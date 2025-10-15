@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testClasses.FooterFunctionality">
+      <class name="testClasses.VerifyProductListPage">
         <methods>
+          <include name="beforeClass"/>
+          <include name="verifyProductImages"/>
+          <include name="veriryFilter"/>
+          <include name="verifyProductTitleChangeColour"/>
+          <include name="verifyCountOfProducts"/>
+          <include name="verifyComparePopup"/>
+          <include name="verifySerchedTextInProductListPage"/>
+          <include name="verifyRelevanceSortByOptionSelected"/>
           <include name="afterMethod"/>
-          <include name="verifyNavigateToPaymentsPage"/>
+          <include name="verifyPresenceOfSortBy"/>
+          <include name="verifyCompareTooltipRemoveAllButton"/>
+          <include name="verifyProductPrice"/>
+          <include name="verifyProductTitle"/>
+          <include name="verifyProductAddToCompare"/>
+          <include name="verifyAddToCompareMaximumProducts"/>
+          <include name="veriryFilterSection"/>
           <include name="afterClass"/>
           <include name="beforeMethod"/>
+          <include name="verifyTooltipOfComapareProducts"/>
+        </methods>
+      </class> <!-- testClasses.VerifyProductListPage -->
+      <class name="testClasses.FooterFunctionality">
+        <methods>
+          <include name="verifyNavigateToFacebookPage"/>
+          <include name="afterMethod"/>
+          <include name="verifyNavigateToPaymentsPage"/>
+          <include name="verifyNavigateToAdvertisePage"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="verifyNavigateToCancellationAndReturnsPage"/>
           <include name="verifyPresenceOfHelpSectionOptions"/>
           <include name="beforeClass"/>
+          <include name="verifyPresenceOfFooterBottomBarOptions"/>
+          <include name="verifyPresenceOfConsumerPolicySectionOptions"/>
         </methods>
       </class> <!-- testClasses.FooterFunctionality -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

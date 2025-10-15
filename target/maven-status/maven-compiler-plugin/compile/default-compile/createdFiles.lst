@@ -1,0 +1,11 @@
+baseClasses\BaseClass.class
+pomClasses\ProductListPage.class
+pomClasses\LoginPage.class
+pomClasses\PaymentPage.class
+pomClasses\ProductPage.class
+pomClasses\FacebookPage.class
+pomClasses\MyntraPage.class
+utils\Selenium_Utils.class
+pomClasses\HomePage.class
+pomClasses\PolicyOfCancellationAndReturnsPage.class
+pomClasses\Contactpage.class

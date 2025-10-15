@@ -36,6 +36,13 @@ public class Selenium_Utils {
 		return elements;	
 	}
 	
+	public static WebElement visibilityOf(WebDriver driver , int time, WebElement element) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+        return wait.until(ExpectedConditions.visibilityOf(element));
+		
+	}
+	
 	public static void clickByJSE(WebDriver driver, WebElement element ) {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;

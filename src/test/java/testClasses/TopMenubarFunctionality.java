@@ -161,6 +161,11 @@ public class TopMenubarFunctionality extends BaseClass{
 	@AfterClass
 	public void afterClass() {
 		
+		if(driver!=null) 
+		{
+			driver.quit();
+		}
+		
 	}
 
 }

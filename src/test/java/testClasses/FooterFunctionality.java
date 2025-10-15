@@ -50,10 +50,10 @@ public class FooterFunctionality extends BaseClass {
 		policyOfCancellationAndReturns = new PolicyOfCancellationAndReturnsPage(driver);
 		facebook = new FacebookPage(driver);
 		
-//		home.clickOnLoginButton();
-//		login.enterMobileNumberInInputField();
-//		login.clickOnRequestOTPButton();
-//		home.verifyHomeScreen(driver);
+		home.clickOnLoginButton();
+		login.enterMobileNumberInInputField();
+		login.clickOnRequestOTPButton();
+		home.verifyHomeScreen(driver);
 	}
  
 	@BeforeMethod
@@ -227,6 +227,11 @@ public class FooterFunctionality extends BaseClass {
   
   
 	public void afterClass() {
+		
+		if(driver!=null) 
+		{
+			driver.quit();
+		}
   
 	}
 
